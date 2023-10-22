@@ -12,7 +12,7 @@ I have learnt to improved codes by:
 - Changing to a title that describe the website better.
 - Using and combining appropriate CSS selectors and properties to ensure CSS language is used efficiently.
 
-!!!!!!a link to the deployed web here!!!!!!!!!
+link to the deployed web: https://itismliu.github.io/horiseon-seo/
 
 ## Installation
 
