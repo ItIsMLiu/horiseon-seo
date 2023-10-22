@@ -1,18 +1,24 @@
+/* Universal Selector */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Element Selectors */
 body {
     background-color: #d9dcd6;
 }
 
+/* header changed from a class selector to an element selector - responding to <div class="header"> changed to <header> in HTML; 
+moved font-family and colour properties to <h1> element selector as they are used for <h1> */
 header {
     padding: 20px;
     background-color: #2a607c;
 }
 
+/* changed from a class selector to an element selector; 
+included font-family and colour properties as they are used specifically for <h1> */
 h1 {
     display: inline-block;
     font-size: 48px;
@@ -20,25 +26,31 @@ h1 {
     color: #ffffff;
 }
 
+/* changed from a class selector to an element selector - responding to <span class="seo">seo</span> changed to <span>seo</span> in HTML */
 span {
     color: #d9dcd6;
 }
 
+/* changed from a class selector to an element selector - responding to the use of <nav> element instead of <div> element within <header> element in HTML;
+moved font-family and font-size properties to <a> element selector as they are used for the link element <a> specifically */
 nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
 }
 
+/* changed from a class selector to an element selector following the removal of <div> elements */
 ul {
     list-style-type: none;
 }
 
+/* changed from a class selector to an element selector following the removal of <div> elements */
 li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* font-family and font-size properties moved from <nav> element level as they are used for the link element <a> specifically */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -46,15 +58,12 @@ a {
     font-size: 20px;
 }
 
+/* */
 p {
     font-size: 16px;
 }
 
-
-
-
-
-
+/* */
 .hero {
     height: 800px;
     width: 100%;
@@ -64,23 +73,27 @@ p {
     background-position: center;
 }
 
+/* */
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* */
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
+/* changed from a class selector to an element selector - responding to the use of <aside> element instead of <div> element in HTML */
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -91,55 +104,27 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* use element element selector 'aside article' to consolidate all class selectors under 'benefit' */
+aside article {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* use element selector h3 to consolidate all class selectors under 'benefit' */
+h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* use element element selector 'aside img' to consolidate all class selectors under 'benefit' */
+aside img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/* use element element selector 'aside img' to consolidate all class selectors under the services section */
+section article {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -148,51 +133,18 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+/* use element element selector 'section img' to consolidate all class selectors under the services section */
+section img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+/* use h2 element selector to style h2 texts instead of individual class selector for each <article> element with h2 */
+h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* footer changed from a class selector to an element selector - responding to <div class="footer"> changed to a <footer> element */
 footer {
     padding: 30px;
     clear: both;
@@ -200,6 +152,9 @@ footer {
     text-align: center;
 }
 
-h2 {
-    font-size: 20px;
+/* in HTML, h2 element in footer changed to h4 as h2  and h3 with a larger font size already used;
+change font size from 20px to 18px, as h4 should not be larger than h3 and h3 is defaulted to 18.72px;
+changed from a class selector to an element selector */
+h4 {
+    font-size: 18px;
 }
