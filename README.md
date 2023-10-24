@@ -14,6 +14,9 @@ I have learnt to improved codes by:
 
 link to the deployed web: https://itismliu.github.io/horiseon-seo/
 
+Screenshot of webpage:
+![alt text](./assets/images/Screenshot%201.png)
+
 ## Installation
 
 N/A
